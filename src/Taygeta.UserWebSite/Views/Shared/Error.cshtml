@@ -1,0 +1,7 @@
+﻿@inject Microsoft.AspNet.Mvc.Localization.IViewLocalizer Localizer
+@{
+    ViewData["Title"] = @Localizer["errorString"];
+}
+
+<h1 class="text-danger">@Localizer["errorString"].</h1>
+<h2 class="text-danger">@Localizer["errorDescriptionString"].</h2>

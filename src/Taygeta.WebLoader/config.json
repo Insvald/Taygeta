@@ -1,0 +1,21 @@
+{
+  "ApplicationInsights": {
+    "InstrumentationKey": "807fec1d-44ce-4a1c-9541-1bdbaf60caf0"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=Taygeta;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  },
+  "VacancyCrawler": {
+    "MaxConcurrentThreads": "1",
+    "MaxPagesToCrawl": "100",
+    "UserAgentString": "Mozilla/5.0 (compatible, MSIE 11, Windows NT 6.3; Trident/7.0;  rv:11.0) like Gecko",
+    "IsRespectRobotsDotTextEnabled": "true",
+    "IsRespectMetaRobotsNoFollowEnabled": "true",
+    "IsRespectAnchorRelNoFollowEnabled": "true",
+    "MinCrawlDelayPerDomainMilliSeconds": "0",
+    "IsExternalPageLinksCrawlingEnabled": "true",
+    "IsExternalPageCrawlingEnabled": "true"
+  }
+}

@@ -1,0 +1,30 @@
+﻿@model Taygeta.UserWebSite.Models.SearchViewModel
+@inject Microsoft.AspNet.Mvc.Localization.IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Localizer["homeString"];
+}
+@section LanguageMenu{
+    <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" id="dropdownButton">@ViewData["CultureCode"] <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a asp-action="Language" asp-route-code="en-US"><img src="~/images/en-US.png" />&nbsp;English</a></li>
+                <li><a asp-action="Language" asp-route-code="he-IL"><img src="~/images/he-IL.png" />&nbsp;עברית</a></li>
+                <li><a asp-action="Language" asp-route-code="ru-RU"><img src="~/images/ru-RU.png" />&nbsp;Русский</a></li>
+            </ul>
+        </li>
+    </ul>
+}
+
+<div>
+    <div class="search-box">
+        <h1>@Localizer["searchCaption"]</h1>
+        <form asp-controller="Search" asp-action="Index" method="get" class="form-inline">
+            <input asp-for="Job" placeholder="@Localizer["searchJobPlaceholder"]" autofocus="autofocus" class="form-control"/>
+            <input asp-for="Location" placeholder="@Localizer["searchLocationPlaceholder"]" class="form-control"/>
+            <button type="submit" class="btn btn-default" aria-label="Left Align">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+        </form>
+    </div>
+</div>

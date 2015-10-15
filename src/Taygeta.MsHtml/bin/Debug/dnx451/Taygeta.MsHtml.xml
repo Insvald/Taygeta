@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Taygeta.MsHtml</name>
+    </assembly>
+    <members>
+        <member name="P:Taygeta.MSHtml.MsHtmlAttributes.Item(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Taygeta.MSHtml.MsHtmlPageDocument">
+            <summary>
+            Wrapper for IHTMLDocument2
+            Facade for working with DOM with MSHTML
+            </summary>
+        </member>
+        <member name="M:Taygeta.MSHtml.MsHtmlPageDocument.Load(Taygeta.Repositories.Models.Page)">
+            <summary>
+            Loads a page into the document
+            </summary>
+            <param name="page">an html page to load</param>
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageDocument.PageElements">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.MSHtml.MsHtmlPageDocument.GetElementById(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageDocument.Page">
+            <inheritdoc />
+        </member>
+        <member name="T:Taygeta.MSHtml.MsHtmlPageElement">
+            <summary>
+            Wrapper for IHTMLElement
+            Facade for working with DOM with MSHTML
+            </summary>
+        </member>
+        <member name="M:Taygeta.MSHtml.MsHtmlPageElement.GetContent">
+            <summary>
+            Lazy initialization for Content
+            </summary>
+            <returns>text inside an element or null if there is none</returns>
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.PageDocument">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.Children">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.Parent">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.Path">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.Attributes">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.InnerText">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.Content">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.Tag">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.PreviousSibling">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.NextSibling">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.MSHtml.MsHtmlPageElement.NodeIndex">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

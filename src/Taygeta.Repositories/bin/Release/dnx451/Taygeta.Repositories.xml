@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Taygeta.Repositories</name>
+    </assembly>
+    <members>
+        <member name="M:Taygeta.Repositories.GeoLocator.GetLocationByIp(System.String,System.String@,System.String@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Taygeta.Repositories.IGeoLocator">
+            <summary>
+            Class for locating IP addresses
+            </summary>
+        </member>
+        <member name="M:Taygeta.Repositories.IGeoLocator.GetLocationByIp(System.String,System.String@,System.String@)">
+            <summary>
+            Gets location of an IP address from ip-api.com free geolocation service
+            </summary>
+            <param name="ipAddress">the client's IP address</param>
+            <param name="country">a located country</param>
+            <param name="city">a located city, if any</param>
+            <returns>true, if the search successful, false otherwise</returns>
+        </member>
+        <member name="M:Taygeta.Repositories.RetrieveExtension.ContainsOne(System.String,System.String[])">
+            <summary>
+            Checks if a string contains one of the specified keywords
+            </summary>
+            <param name="textToSearch">string to check</param>
+            <param name="keywords">keywords to search</param>
+            <returns>true, if the match is found, or false otherwise</returns>
+        </member>
+        <member name="M:Taygeta.Repositories.RetrieveExtension.ContainsOne(System.String,System.String)">
+            <summary>
+            Checks if a string contains one of the specified keywords
+            </summary>
+            <param name="textToSearch">string to check</param>
+            <param name="keywords">comma-delimited string of keywords</param>
+            <returns>true, if the match is found, or false otherwise</returns>
+        </member>
+        <member name="M:Taygeta.Repositories.RetrieveExtension.GetAttributeFrom``1(System.Object,System.String)">
+            <summary>
+            Gets an attribute applied to the specified property, if any
+            </summary>
+            <typeparam name="T">type of an attribute</typeparam>
+            <param name="instance">object instance to check</param>
+            <param name="propertyName">name of the property to check</param>
+            <returns>the found attribute or null otherwise</returns>
+        </member>
+        <member name="M:Taygeta.Repositories.RetrieveExtension.GetAnnotatedLength(System.Object,System.String)">
+            <summary>
+            Gets max length of a string if it is specified by attributes
+            </summary>
+            <param name="instance">object instance to check</param>
+            <param name="propertyName">name of the property to check</param>
+            <returns>maximum length of the string</returns>
+        </member>
+        <member name="T:Taygeta.Repositories.Html.IPageDocument">
+            <summary>
+            Interface encapsulating an HTML page and DOM
+            </summary>
+        </member>
+        <member name="M:Taygeta.Repositories.Html.IPageDocument.GetElementById(System.String)">
+            <summary>
+            Get specific element with known id
+            </summary>
+            <param name="id">id to find</param>
+            <returns>found element or null otherwise</returns>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageDocument.PageElements">
+            <summary>
+            List of all elements (tags) with their unique paths as keys
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageDocument.Page">
+            <summary>
+            Current html page 
+            </summary>
+        </member>
+        <member name="T:Taygeta.Repositories.Html.IPageElementAttributes">
+            <summary>
+            List of tag attributes
+            </summary>
+        </member>
+        <member name="T:Taygeta.Repositories.Html.IPageElement">
+            <summary>
+            Interface encapsulating DOM element on an HTML page
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageElement.Tag">
+            <summary>
+            Name of the tag
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageElement.Attributes">
+            <summary>
+            Array of the attributes
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageElement.Path">
+            <summary>
+            The path of tags from the root
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageElement.Content">
+            <summary>
+            The text between open and closing tags, not including child tags
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageElement.Children">
+            <summary>
+            Hierarchical list of child nodes
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageElement.Parent">
+            <summary>
+            The parent element, if any
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageElement.PreviousSibling">
+            <summary>
+            The previous element in the parent collection, if any
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageElement.NextSibling">
+            <summary>
+            The next element in the parent child collection, if any
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageElement.PageDocument">
+            <summary>
+            Parent page document
+            </summary>
+        </member>
+        <member name="P:Taygeta.Repositories.Html.IPageElement.Bag">
+            <summary>
+            Arbitrary object holder
+            </summary>
+        </member>
+        <member name="M:Taygeta.Repositories.Html.PageElementExtension.DistanceTo(Taygeta.Repositories.Html.IPageElement,Taygeta.Repositories.Html.IPageElement)">
+            <summary>
+            Distance to an element (in nodes)
+            </summary>
+            <param name="element1">An element to measure distance from</param>
+            <param name="element2">An element to measure distance to</param>
+            <returns>Count of nodes between elements</returns>
+        </member>
+        <member name="M:Taygeta.Repositories.Html.PageElementExtension.GetSiblingsTags(Taygeta.Repositories.Html.IPageElement,System.String@,System.String@)">
+            <summary>
+            Gets tag names from both side of an element
+            </summary>
+            <param name="element"></param>
+            <param name="leftTag">the tag name of the previous sibling</param>
+            <param name="rightTag">the tag name of the next sibling</param>
+        </member>
+        <member name="M:Taygeta.Repositories.Html.PageElementExtension.GetParentAtLevel(Taygeta.Repositories.Html.IPageElement,System.Int32)">
+            <summary>
+            Gets a parent of specified level in the DOM tree
+            </summary>
+            <param name="element"></param>
+            <param name="level">level of hierarchy to look at</param>
+            <returns>parent element</returns>
+        </member>
+        <member name="M:Taygeta.Repositories.Html.PageElementExtension.GetUniquePath(Taygeta.Repositories.Html.IPageElement)">
+            <summary>
+            Get unique path to a tag and/or to its attribute
+            Example: /HTML/BODY/DIV#2/SPAN/A#3@HREF
+            Unqiue path - list of slash-delimited tags from root to an element, 
+            after the '#' - a zero-based ordinal number of a tag from the first sibling 
+            (#0 or if it is a unique tag - number is optional also)
+            (optional) after the '@' - attribute name or @CONTENT - text between tags not including child elements
+            </summary>
+            <param name="pageElement"></param>
+            <returns>a unique path</returns>
+        </member>
+        <member name="T:Taygeta.Repositories.Localization.DbStringLocalizer">
+            <summary>
+            Implementation of IStringLocalizer for database stored localization strings
+            </summary>
+        </member>
+        <member name="M:Taygeta.Repositories.Localization.DbStringLocalizer.GetAllStrings(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.Repositories.Localization.DbStringLocalizer.WithCulture(System.Globalization.CultureInfo)">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.Repositories.Localization.DbStringLocalizer.Item(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.Repositories.Localization.DbStringLocalizer.Item(System.String,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="T:Taygeta.Repositories.Localization.DbStringLocalizerFactory">
+            <summary>
+            Implementation of the database stored localization strings
+            </summary>
+        </member>
+        <member name="M:Taygeta.Repositories.Localization.DbStringLocalizerFactory.Create(System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.Repositories.Localization.DbStringLocalizerFactory.Create(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Taygeta.Repositories.Logging.DataSupplierAppender">
+            <summary>
+            Log4Net appender using IDataSupplier to save log entries
+            </summary>
+        </member>
+        <member name="M:Taygeta.Repositories.Logging.Log4NetLogger.Log(Microsoft.Framework.Logging.LogLevel,System.Int32,System.Object,System.Exception,System.Func{System.Object,System.Exception,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.Repositories.Logging.Log4NetLogger.IsEnabled(Microsoft.Framework.Logging.LogLevel)">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.Repositories.Logging.Log4NetLogger.BeginScopeImpl(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="T:Taygeta.Repositories.Logging.Log4NetLogger.NoopDisposable">
+            <summary>
+            Stub for IDisposable
+            </summary>
+        </member>
+        <member name="M:Taygeta.Repositories.Logging.Log4NetLoggerProvider.#ctor(System.String,Taygeta.Repositories.IDataSupplier)">
+            <summary>
+            Initializes a new log4net logger provider using an XML file
+            </summary>
+            <param name="xmlConfig">path to an XML config file</param>
+            <param name="dataSupplier">optional <see cref="T:Taygeta.Repositories.IDataSupplier"/> implementation for saving log entries through it</param>
+        </member>
+        <member name="M:Taygeta.Repositories.Logging.Log4NetLoggerProvider.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.Repositories.Logging.Log4NetLoggerProvider.CreateLogger(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.Repositories.Models.LogEntry.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Taygeta.Repositories.Models.LogEntry.#ctor(System.DateTime,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Assigns values checking the sizes of strings
+            </summary>
+            <param name="date"></param>
+            <param name="thread"></param>
+            <param name="level"></param>
+            <param name="logger"></param>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+    </members>
+</doc>

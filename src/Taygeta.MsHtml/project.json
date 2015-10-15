@@ -1,0 +1,21 @@
+{
+    "version": "1.0.0-*",
+    "description": "Taygeta.MSHtml Class Library",
+    "authors": [ "Ilya Rovensky" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "Taygeta.Repositories": "1.0.0-*",
+        "JetBrains.Annotations": "9.2.0"
+    },
+
+    "frameworks": {
+        "dnx451": {
+            "dependencies": {
+                "Microsoft.mshtml": "1.0.0-*"
+            }
+        }
+    }
+}

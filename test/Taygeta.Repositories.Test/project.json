@@ -1,0 +1,23 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Taygeta.Repositories.Test test project",
+  "authors": [ "Ilya Rovensky" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "xunit": "2.1.0-*",
+    "xunit.runner.dnx": "2.1.0-*",
+    "Taygeta.Repositories": "1.0.0-*",
+    "Taygeta.MsHtml.Test": "1.0.0-*"
+  },
+
+  "commands": {
+    "test": "xunit.runner.dnx"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}

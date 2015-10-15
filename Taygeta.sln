@@ -1,0 +1,193 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{068D72D5-98AC-4A0D-A3E4-639D6BE65F0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{470020F3-8334-48FE-B723-CDD7B1E8DDFC}"
+	ProjectSection(SolutionItems) = preProject
+		Azure database setup.sql = Azure database setup.sql
+		global.json = global.json
+		Query.sql = Query.sql
+		Readme.txt = Readme.txt
+		Seed database.sql = Seed database.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{2702C0AD-4D38-4433-9E68-B3D08E2C293F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{4C5D177A-0379-4916-82D7-60A1E4EA2B04}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{A7100D57-DBA7-4FC1-9D0D-B6058A7251EE}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\UserWebSite.json = PublishScripts\Templates\UserWebSite.json
+		PublishScripts\Templates\UserWebSite.param.dev.json = PublishScripts\Templates\UserWebSite.param.dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{800F3E27-E200-442E-8CDA-5DCFEE17572F}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.DataAccessLayer", "src\Taygeta.DataAccessLayer\Taygeta.DataAccessLayer.xproj", "{5C3F6235-0547-4EF5-8724-C95BA707391A}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.UserWebSite", "src\Taygeta.UserWebSite\Taygeta.UserWebSite.xproj", "{9FC698D1-095D-43E5-AECB-7FF004A0CDE0}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.DataAccessLayer.Test", "test\Taygeta.DataAccessLayer.Test\Taygeta.DataAccessLayer.Test.xproj", "{EBA6A7AC-1C10-472B-820E-EFB1DE287F38}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.UserWebSite.Test", "test\Taygeta.UserWebSite.Test\Taygeta.UserWebSite.Test.xproj", "{650A5A85-5956-491E-9312-5E25A27D1108}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.Repositories", "src\Taygeta.Repositories\Taygeta.Repositories.xproj", "{14B8963F-B744-4995-9F13-767F323F5686}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.MsHtml.Test", "test\Taygeta.MsHtml.Test\Taygeta.MsHtml.Test.xproj", "{DA31FCF2-1BB8-4458-9266-359813949B1C}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.MsHtml", "src\Taygeta.MsHtml\Taygeta.MsHtml.xproj", "{ECAA1878-71DB-4D1E-8985-6355BD4F97E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTML", "HTML", "{F952CE12-D7F6-4E6D-A659-0E518A550A1D}"
+	ProjectSection(SolutionItems) = preProject
+		test\HTML\js-test.html = test\HTML\js-test.html
+		test\HTML\LiveU-Careers.html = test\HTML\LiveU-Careers.html
+		test\HTML\mshtml-test.html = test\HTML\mshtml-test.html
+		test\HTML\mshtml-test2.html = test\HTML\mshtml-test2.html
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.Repositories.Test", "test\Taygeta.Repositories.Test\Taygeta.Repositories.Test.xproj", "{FE040AB6-C42A-4BE1-9AB3-B8AF51BC43E1}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.Rsp", "src\Taygeta.Rsp\Taygeta.Rsp.xproj", "{BC46D6FE-2DF7-474A-AA45-5C74AD46EC57}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.Rsp.Test", "test\Taygeta.Rsp.Test\Taygeta.Rsp.Test.xproj", "{EE6A4276-7C00-4EF2-BD08-7113596B4DFC}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.WebLoader", "src\Taygeta.WebLoader\Taygeta.WebLoader.xproj", "{F1749FC3-9F36-442A-8219-FF5BD23FB0D8}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Taygeta.WebLoader.Test", "test\Taygeta.WebLoader.Test\Taygeta.WebLoader.Test.xproj", "{3588AE5B-B39C-4EE1-8717-826C8BAF5E82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C3F6235-0547-4EF5-8724-C95BA707391A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C3F6235-0547-4EF5-8724-C95BA707391A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C3F6235-0547-4EF5-8724-C95BA707391A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C3F6235-0547-4EF5-8724-C95BA707391A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC698D1-095D-43E5-AECB-7FF004A0CDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC698D1-095D-43E5-AECB-7FF004A0CDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC698D1-095D-43E5-AECB-7FF004A0CDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC698D1-095D-43E5-AECB-7FF004A0CDE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA6A7AC-1C10-472B-820E-EFB1DE287F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA6A7AC-1C10-472B-820E-EFB1DE287F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA6A7AC-1C10-472B-820E-EFB1DE287F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA6A7AC-1C10-472B-820E-EFB1DE287F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{650A5A85-5956-491E-9312-5E25A27D1108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{650A5A85-5956-491E-9312-5E25A27D1108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{650A5A85-5956-491E-9312-5E25A27D1108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{650A5A85-5956-491E-9312-5E25A27D1108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14B8963F-B744-4995-9F13-767F323F5686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B8963F-B744-4995-9F13-767F323F5686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B8963F-B744-4995-9F13-767F323F5686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B8963F-B744-4995-9F13-767F323F5686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA31FCF2-1BB8-4458-9266-359813949B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA31FCF2-1BB8-4458-9266-359813949B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA31FCF2-1BB8-4458-9266-359813949B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA31FCF2-1BB8-4458-9266-359813949B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAA1878-71DB-4D1E-8985-6355BD4F97E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAA1878-71DB-4D1E-8985-6355BD4F97E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAA1878-71DB-4D1E-8985-6355BD4F97E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAA1878-71DB-4D1E-8985-6355BD4F97E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE040AB6-C42A-4BE1-9AB3-B8AF51BC43E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE040AB6-C42A-4BE1-9AB3-B8AF51BC43E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE040AB6-C42A-4BE1-9AB3-B8AF51BC43E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE040AB6-C42A-4BE1-9AB3-B8AF51BC43E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC46D6FE-2DF7-474A-AA45-5C74AD46EC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC46D6FE-2DF7-474A-AA45-5C74AD46EC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC46D6FE-2DF7-474A-AA45-5C74AD46EC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC46D6FE-2DF7-474A-AA45-5C74AD46EC57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE6A4276-7C00-4EF2-BD08-7113596B4DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE6A4276-7C00-4EF2-BD08-7113596B4DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE6A4276-7C00-4EF2-BD08-7113596B4DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE6A4276-7C00-4EF2-BD08-7113596B4DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1749FC3-9F36-442A-8219-FF5BD23FB0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1749FC3-9F36-442A-8219-FF5BD23FB0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1749FC3-9F36-442A-8219-FF5BD23FB0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1749FC3-9F36-442A-8219-FF5BD23FB0D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3588AE5B-B39C-4EE1-8717-826C8BAF5E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3588AE5B-B39C-4EE1-8717-826C8BAF5E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3588AE5B-B39C-4EE1-8717-826C8BAF5E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3588AE5B-B39C-4EE1-8717-826C8BAF5E82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C5D177A-0379-4916-82D7-60A1E4EA2B04} = {2702C0AD-4D38-4433-9E68-B3D08E2C293F}
+		{A7100D57-DBA7-4FC1-9D0D-B6058A7251EE} = {2702C0AD-4D38-4433-9E68-B3D08E2C293F}
+		{5C3F6235-0547-4EF5-8724-C95BA707391A} = {068D72D5-98AC-4A0D-A3E4-639D6BE65F0A}
+		{9FC698D1-095D-43E5-AECB-7FF004A0CDE0} = {068D72D5-98AC-4A0D-A3E4-639D6BE65F0A}
+		{EBA6A7AC-1C10-472B-820E-EFB1DE287F38} = {800F3E27-E200-442E-8CDA-5DCFEE17572F}
+		{650A5A85-5956-491E-9312-5E25A27D1108} = {800F3E27-E200-442E-8CDA-5DCFEE17572F}
+		{14B8963F-B744-4995-9F13-767F323F5686} = {068D72D5-98AC-4A0D-A3E4-639D6BE65F0A}
+		{DA31FCF2-1BB8-4458-9266-359813949B1C} = {800F3E27-E200-442E-8CDA-5DCFEE17572F}
+		{ECAA1878-71DB-4D1E-8985-6355BD4F97E1} = {068D72D5-98AC-4A0D-A3E4-639D6BE65F0A}
+		{F952CE12-D7F6-4E6D-A659-0E518A550A1D} = {800F3E27-E200-442E-8CDA-5DCFEE17572F}
+		{FE040AB6-C42A-4BE1-9AB3-B8AF51BC43E1} = {800F3E27-E200-442E-8CDA-5DCFEE17572F}
+		{BC46D6FE-2DF7-474A-AA45-5C74AD46EC57} = {068D72D5-98AC-4A0D-A3E4-639D6BE65F0A}
+		{EE6A4276-7C00-4EF2-BD08-7113596B4DFC} = {800F3E27-E200-442E-8CDA-5DCFEE17572F}
+		{F1749FC3-9F36-442A-8219-FF5BD23FB0D8} = {068D72D5-98AC-4A0D-A3E4-639D6BE65F0A}
+		{3588AE5B-B39C-4EE1-8717-826C8BAF5E82} = {800F3E27-E200-442E-8CDA-5DCFEE17572F}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://insvald.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\Taygeta.DataAccessLayer\\Taygeta.DataAccessLayer.xproj
+		SccProjectTopLevelParentUniqueName1 = Taygeta.sln
+		SccProjectName1 = src/Taygeta.DataAccessLayer
+		SccLocalPath1 = src\\Taygeta.DataAccessLayer
+		SccProjectUniqueName2 = src\\Taygeta.UserWebSite\\Taygeta.UserWebSite.xproj
+		SccProjectTopLevelParentUniqueName2 = Taygeta.sln
+		SccProjectName2 = src/Taygeta.UserWebSite
+		SccLocalPath2 = src\\Taygeta.UserWebSite
+		SccProjectUniqueName3 = test\\Taygeta.DataAccessLayer.Test\\Taygeta.DataAccessLayer.Test.xproj
+		SccProjectTopLevelParentUniqueName3 = Taygeta.sln
+		SccProjectName3 = test/Taygeta.DataAccessLayer.Test
+		SccLocalPath3 = test\\Taygeta.DataAccessLayer.Test
+		SccProjectUniqueName4 = test\\Taygeta.UserWebSite.Test\\Taygeta.UserWebSite.Test.xproj
+		SccProjectTopLevelParentUniqueName4 = Taygeta.sln
+		SccProjectName4 = test/Taygeta.UserWebSite.Test
+		SccLocalPath4 = test\\Taygeta.UserWebSite.Test
+		SccProjectUniqueName5 = src\\Taygeta.Repositories\\Taygeta.Repositories.xproj
+		SccProjectTopLevelParentUniqueName5 = Taygeta.sln
+		SccProjectName5 = src/Taygeta.Repositories
+		SccLocalPath5 = src\\Taygeta.Repositories
+		SccProjectUniqueName6 = test\\Taygeta.MsHtml.Test\\Taygeta.MsHtml.Test.xproj
+		SccProjectTopLevelParentUniqueName6 = Taygeta.sln
+		SccProjectName6 = test/Taygeta.MsHtml.Test
+		SccLocalPath6 = test\\Taygeta.MsHtml.Test
+		SccProjectUniqueName7 = src\\Taygeta.MsHtml\\Taygeta.MsHtml.xproj
+		SccProjectTopLevelParentUniqueName7 = Taygeta.sln
+		SccProjectName7 = src/Taygeta.MsHtml
+		SccLocalPath7 = src\\Taygeta.MsHtml
+		SccProjectUniqueName8 = test\\Taygeta.Repositories.Test\\Taygeta.Repositories.Test.xproj
+		SccProjectTopLevelParentUniqueName8 = Taygeta.sln
+		SccProjectName8 = test/Taygeta.Repositories.Test
+		SccLocalPath8 = test\\Taygeta.Repositories.Test
+		SccProjectUniqueName9 = src\\Taygeta.Rsp\\Taygeta.Rsp.xproj
+		SccProjectTopLevelParentUniqueName9 = Taygeta.sln
+		SccProjectName9 = src/Taygeta.Rsp
+		SccLocalPath9 = src\\Taygeta.Rsp
+		SccProjectUniqueName10 = test\\Taygeta.Rsp.Test\\Taygeta.Rsp.Test.xproj
+		SccProjectTopLevelParentUniqueName10 = Taygeta.sln
+		SccProjectName10 = test/Taygeta.Rsp.Test
+		SccLocalPath10 = test\\Taygeta.Rsp.Test
+		SccProjectUniqueName11 = src\\Taygeta.WebLoader\\Taygeta.WebLoader.xproj
+		SccProjectTopLevelParentUniqueName11 = Taygeta.sln
+		SccProjectName11 = src/Taygeta.WebLoader
+		SccLocalPath11 = src\\Taygeta.WebLoader
+		SccProjectUniqueName12 = test\\Taygeta.WebLoader.Test\\Taygeta.WebLoader.Test.xproj
+		SccProjectTopLevelParentUniqueName12 = Taygeta.sln
+		SccProjectName12 = test/Taygeta.WebLoader.Test
+		SccLocalPath12 = test\\Taygeta.WebLoader.Test
+	EndGlobalSection
+EndGlobal

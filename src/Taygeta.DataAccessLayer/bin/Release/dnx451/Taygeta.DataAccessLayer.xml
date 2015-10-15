@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Taygeta.DataAccessLayer</name>
+    </assembly>
+    <members>
+        <member name="T:Taygeta.DataAccessLayer.DataContext">
+            <summary>
+            EF context for data access
+            </summary>
+        </member>
+        <member name="M:Taygeta.DataAccessLayer.DataContext.Save">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.DataAccessLayer.DataContext.Pages">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.DataAccessLayer.DataContext.Wrappers">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.DataAccessLayer.DataContext.Resources">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.DataAccessLayer.DataContext.Vacancies">
+            <inheritdoc />
+        </member>
+        <member name="P:Taygeta.DataAccessLayer.DataContext.LogEntries">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.DataAccessLayer.DataRepository`1.Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.DataAccessLayer.DataRepository`1.Get``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{`0,System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.DataAccessLayer.DataRepository`1.Get(System.Func{`0,System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.DataAccessLayer.DataRepository`1.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Taygeta.DataAccessLayer.DataRepository`1.Update(`0)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

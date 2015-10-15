@@ -1,0 +1,10 @@
+{
+  "ApplicationInsights": {
+    "InstrumentationKey": "807fec1d-44ce-4a1c-9541-1bdbaf60caf0"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=Taygeta;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

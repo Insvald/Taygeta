@@ -1,0 +1,86 @@
+﻿@model Taygeta.UserWebSite.Models.SearchViewModel
+@inject Microsoft.AspNet.Mvc.Localization.IViewLocalizer Localizer
+<table class="table table-striped table-hover table-condensed">
+    <thead>
+        <tr>
+            <th>@Localizer["numberString"]</th>
+            <th>@Localizer["positionString"]</th>
+            <th>@Localizer["companyString"]</th>
+            <th>@Localizer["locationString"]</th>
+            <th>@Localizer["publishedString"]</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int rowNumber = (Model.PageNumber - 1) * Model.PageSize + 1;
+            int lastPage = (Model.RecordCount + Model.PageSize - 1)/Model.PageSize;
+            foreach (var vacancy in Model.Vacancies)
+            {
+                <tr data-toggle="collapse" data-target="@("#hiddenRow" + rowNumber)" class="accordion-toggle">                    
+                    <td>@rowNumber</td>
+                    <th scope="row">@vacancy.Position</th>
+                    <td>@vacancy.CompanyName</td>
+                    <td>@vacancy.Location</td>
+                    <td>@vacancy.Published</td>
+                </tr>
+                <tr>
+                    <td colspan="12" class="hiddenRow">
+                        <div id="@("hiddenRow" + rowNumber)" class="accordian-body collapse">
+                            <h4>Status: @(vacancy.Closed == null ? "Active" : "Closed")</h4>
+                            <h4>Description:</h4>
+                            <p>@vacancy.Description</p>
+                            <br/>
+                            <h4>Requirements:</h4>
+                            <p>@vacancy.Requirements</p>
+                            <br/>
+                            <p><a href="@vacancy.EMail">Contact e-mail</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                rowNumber++;
+            }
+        }
+    </tbody>
+</table>
+<br />
+@if (Model.RecordCount > Model.PageSize)
+{
+    <ul class="pagination">
+        @if (Model.PageNumber == 1)
+            {
+            <li class="disabled"><a href="#">&laquo;</a></li>
+        }
+        else
+        {
+            <li><a href="#" onclick="LoadPage(@Model.PageNumber - 1);">&laquo;</a></li>
+        }
+        @for (int i = 1; i <= lastPage; i++)
+        {
+            if (i == Model.PageNumber)
+            {
+                <li class="active"><a href="#" onclick="LoadPage(@i);">@i</a></li>
+            }
+            else
+            {
+                <li><a href="#" onclick="LoadPage(@i);">@i</a></li>
+            }
+        }
+        @if (Model.PageNumber == lastPage)
+            {
+            <li class="disabled"><a href="#">&raquo;</a></li>
+        }
+        else
+        {
+            <li><a href="#" onclick="LoadPage(@Model.PageNumber + 1);">&raquo;</a></li>
+        }
+    </ul>
+}
+<script>
+    function LoadPage(page) {
+        var model = { PageNumber : page }
+        $.post("/Search", model, function(response) {
+            $("#vacancyList").html(response);
+        });
+    }
+</script>

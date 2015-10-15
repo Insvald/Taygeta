@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0-*",
+  "description": "Taygeta.RspExtractor.Test test project",
+  "authors": [ "Ilya Rovensky" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "xunit": "2.1.0-*",
+    "xunit.runner.dnx": "2.1.0-*",
+    "Taygeta.Repositories": "1.0.0-*",
+    "Taygeta.DataAccessLayer": "1.0.0-*",
+    "Taygeta.Rsp": "1.0.0-*",
+    "Taygeta.MsHtml": "1.0.0-*",
+    "Taygeta.DataAccessLayer.Test": "1.0.0-*"
+  },
+
+  "commands": {
+    "test": "xunit.runner.dnx"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}
